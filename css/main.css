@@ -1,0 +1,355 @@
+/* OPEN CSS RESETER */
+
+	*{
+		margin: 0px;
+		padding: 0px;
+		font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif; 
+		outline: 0;
+	}
+
+	body{
+		background: #dae2ef;
+	}
+
+	a, input{
+		outline: 0 !important;
+		text-decoration: none;
+		text-transform: none;
+	}
+
+/* CLOSE CSS RESETER */
+
+
+
+
+
+
+
+
+/* OPEN GENERAL CSS */
+
+.alert-wrap{
+	position: absolute; 
+	z-index: 10000;
+	width: 100%; 
+	height: 100%;
+	padding: 20% 100px;
+	background: rgba(0,0,0,0.4);
+	display: none;
+}
+
+.alert-wrap .alert{
+	box-shadow: 0px 0px 30px #323232;
+}
+
+/* CLOSE GENERAL CSS */
+	
+
+
+/* OPEN HEADER CSS */
+
+
+	.header-wrap{
+		position: fixed;
+		z-index: 100;
+		width: 100%;
+	}
+
+	.sidebar-header{
+		width: 17.5%;
+		height: 80px;
+		background: #009EE9;
+		padding: 10px;
+		border-bottom: 5px solid #4BAFDE;
+		margin-bottom: 5px;
+		float: left;
+	}
+
+	.header{
+		box-shadow: 0 8px 6px -6px rgba(0,0,0,0.5);
+		width: 82.5%;
+		z-index: 90;
+		left: 0;
+		float: left;
+	}
+
+	.navbar{
+		width: 100%;
+		background: #0E1E24;
+		margin: 0px;
+		border-radius: 0px;
+		border:0px;
+		min-height: 50px;
+	}
+
+	.statbar{
+		width: 100%;
+		background: #dae2ef;
+		height: 30px;
+	}
+
+	.statbar .path{
+		font-size: 13px;
+		padding: 5px 15px;
+		display: block;
+		text-transform: capitalize;
+	}
+
+	.statbar .path i{
+		font-size: 1em;
+		font-weight: bold;
+	}
+
+
+/* CLOSE HEADER CSS */
+
+
+
+/* OPEN MAIN CSS */
+
+		.main-wrap{
+			width: 100%;
+			position: absolute;
+			height: 100%;
+		}
+		
+	/* OPEN SIDEBAR CSS */
+
+		.sidebar{
+			display: inline-block;
+			background: #061217;
+			position: fixed;
+			padding-top: 80px;
+			color: #9E9E9E;
+			width: 17.5%;
+			height: 100%;
+			z-index: 99;
+		}	
+
+		.sidebar-body{
+			width: 100%;
+			max-height: 100%;
+			padding-top: 1px;
+		}
+
+			.colapse-menu{
+				border-bottom: 1px solid #0E1E24;
+			}
+
+			.colapse-menu ul{
+				padding: 0px;
+				margin: 0px;
+			}
+
+			.colapse-menu ul li{
+				width: 100%;
+				border-bottom: 1px solid #0E1E24;
+			}
+
+
+			.colapse-menu ul li a{
+				padding: 10px 15px;
+				width: 100%;
+				border-left: 5px solid rgba(255,255,255,0);
+				display: block;
+				width: 100%;
+				text-transform: none;
+				text-decoration: none;
+				transition: .3s;
+				transition-timing-function: cubic-bezier(0,1.07,1,1);
+			}
+
+			.colapse-menu ul li.active a{
+				border-left: 5px solid #dae2ef;;
+				background: #0c90ce;
+			}
+
+			.colapse-menu ul li:hover a{
+				background: #0c90ce;
+				padding: 10px 15px 10px 20px;
+				transition: .2s;
+			}
+
+			.colapse-menu ul li.active:hover a{
+				padding: 10px 15px 10px 15px;
+			}
+
+			.colapse-menu ul li a *{
+				color: #fff;
+				display: inline-block;
+				font-size: 1.3em;
+				text-transform: capitalize;
+			}
+
+			.colapse-menu ul li a span{
+				padding: 0px 5px 0px 5px;
+				font-size: .9em;
+			}
+
+		.sidebar-footer{
+			position: absolute;
+			width: 100%;
+			bottom: 0px;
+			height: 30px;
+			box-sizing: border-box;
+			background: #009ee9;
+		}
+
+			.sidebar-footer ul li{
+				width: 20%;
+				list-style: none;
+				display: inline-block;
+				float: left;
+				padding: 7px 0px 3px 0px;
+				text-align: center;
+				cursor: pointer;
+				transition: .3s;
+			}
+
+			.sidebar-footer ul li a{
+				font-size: 1em;
+				color: #dae2ef;
+				text-transform: none;
+				text-decoration: none;
+				width: 100%;
+			}
+
+			.sidebar-footer ul li:hover{
+				background: #008dd1;
+			}
+
+	/* CLOSE SIDEBAR CSS */
+
+
+
+	/* OPEN CONTENT CSS */
+
+		.main{
+			background: #dae2ef;
+			display: inline-block;
+			padding-top: 80px;
+			width: 82.5%;
+			margin-left: 17.5%;
+			right: 0;
+		}
+
+		.cardbox{
+			padding: 20px;
+		}
+
+		.cardbox .card{
+			background: #dae2ef;
+			padding: 15px 20px;
+			background: #fff;
+			text-align: justify;
+			border-radius: 2.5px;
+			border:1.5px solid #b6c1ce;
+			box-sizing: border-box;
+		}
+
+		.cardbox .card .title{
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		.page{
+			display: none;
+		}
+
+		.page.active{
+			display: block;
+		}
+
+		td::last-child{
+			text-align: right;
+		}
+
+		.class-table, .student-table{
+			text-align: center;
+			cursor: default;
+		}
+
+		.class-table thead, .student-table thead{
+			background: #ddd;
+		}
+
+		.class-table tbody tr, .student-table tbody tr{
+			cursor: pointer;
+		}
+
+		.table thead tr td:hover{
+			background: #cccccc;
+		}
+
+		.collapse-register-form{
+			padding:15px 20px 10px 20px; 
+			display: none;
+		}
+
+		.collapse-register-form button.btn.btn-default{
+			width: 100%;
+		}
+
+		.year-until{
+			height: 34px;
+			text-align: center; 
+			width: auto;
+			padding: 0px;
+		}
+
+		.year-until strong{
+			display: block;
+			margin: 10px 0px;
+			line-height: 14px;
+			font-weight: bold;
+			font-size: 30px;
+		}
+
+	/* CLOSE CONTENT CSS */
+
+/* OPEN MAIN CSS */
+
+
+
+
+/* OPEN RESPONSIVE */
+	
+@media (max-width : 980px){
+
+	.hide-on-mobile{
+		background: #dae2ef;
+		visibility: hidden;
+		display: none !important;
+	}
+
+	.sidebar-header{
+		width: 6%
+	}
+
+	.sidebar{
+		width: 6%;
+	}
+
+	.header{
+		width: 94%;
+	}
+
+	.sidebar-footer{
+		position: fixed;
+	}
+
+	.sidebar-footer ul{
+		width: 100%;
+	}
+
+	.main{
+		width: 94%;
+		margin-left: 6%;
+	}
+
+}
+.pencil{
+	margin: 0px 45px 0px 0px;
+}
+
+/* OPEN RESPONSIVE */
